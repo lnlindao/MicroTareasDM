@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar una Tarea a Realizar"
+        android:paddingTop="20px"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTarea"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="25dp"/>
+
+    <ListView
+        android:id="@+id/listaTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:cacheColorHint="#111"
+        android:choiceMode="singleChoice"
+        android:divider="#A4A4A4"
+        android:dividerHeight="0.5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:id="@+id/agregar"
+        android:onClick="agregarTarea"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
